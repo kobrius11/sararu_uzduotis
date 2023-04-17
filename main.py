@@ -91,7 +91,7 @@ while True:
     """    
     )
     try:
-        choice = int(input("pasirinkite norima operacija (0-2-) :"))
+        choice = int(input("pasirinkite norima operacija (0-1-2) :"))
     except:
         print("NaN - Not a Number!")
         continue
@@ -193,6 +193,6 @@ while True:
     elif choice == 0:
         break
     else:
-        if choice > 3 or choice < 0:
+        if choice > 2 or choice < 0:
             print("invalid choice")
             continue
