@@ -36,26 +36,26 @@ pirkiniai = []
 
 
 zuvies_produktai =[
-    ['silke surime', 14.99, '500kcal', '2023-05-16'], ['karpio kapotinis', 14.99, '500kcal', '2023-05-16'],\
-    ['juros eserys', 14.99, '500kcal', '2023-05-16'], ['menkes vyniotinis', 14.99, '500kcal', '2023-05-16'],\
-    ['lydekaite', 14.99, '500kcal', '2023-05-16'], ['lasisos file', 14.99, '500kcal', '2023-05-16'],\
-    ['koldunai su karosu', 14.99, '500kcal', '2023-05-16']
+    ['silke surime', 11.11, 500, '2021-04-16'], ['karpio kapotinis', 1.22, 121, '1999-12-01'],\
+    ['juros eserys', 23.45, 21, '2020-06-11'], ['menkes vyniotinis', 15.01, 22, '2022-01-01'],\
+    ['lydekaite', 100.01, 111, '2023-12-22'], ['lasisos file', 23.89, 333, '2020-10-11'],\
+    ['koldunai su karosu', 1.59, 70, '2021-05-29']
     ]
 
 pieno_produktai = [
-    ['pienas', 3.99, '500kcal', '2023-05-16'], ['surelis', 3.99, '500kcal', '2023-05-16'], ['varske', 3.99, '500kcal', '2023-05-16'],\
-    ['jogurtas', 3.99, '500kcal', '2023-05-16'], ['suris', 3.99, '500kcal', '2023-05-16'], ['majonezas', 3.99, '500kcal', '2023-05-16'],\
-    ['sviestas', 3.99, '500kcal', '2023-05-16'], ['grietine', 3.99, '500kcal', '2023-05-16'], ['grietinele', 3.99, '500kcal', '2023-05-16'],\
-    ['kefyras', 3.99, '500kcal', '2023-05-16']
+    ['pienas', 1.20, 10, '2022-01-11'], ['surelis', 0.58, 15, '1999-04-11'], ['varske', 1.95, 45, '2020-04-01'],\
+    ['jogurtas', 1.00, 55, '2023-07-05'], ['suris', 5.51, 121, '2022-09-10'], ['majonezas', 1.10, 166, '2020-12-23'],\
+    ['sviestas', 5.45, 621, '2022-01-11'], ['grietine', 4.99, 91, '2022-07-07'], ['grietinele', 0.99, 15, '2023-03-11'],\
+    ['kefyras', 1.10, 42, '2022-11-01']
     ]
 
 miltiniai_produktai = [
-    ['kvieciu miltai', 1.49, '350kcal', '2024-01-30'], ['rugiu miltai', 1.49, '200kcal', '2024-01-30'],\
-    ['kukuruzu miltai', 1.49, '200kcal', '2024-01-30'], ['ryziu miltai', 1.49, '350kcal', '2024-01-30'],\
+    ['kvieciu miltai', 1.11, 220, '2030-03-30'], ['rugiu miltai', 2.23, 10, '2022-11-30'],\
+    ['kukuruzu miltai', 0.87, 111, '2020-01-29'], ['ryziu miltai', 5.47, 150, '2022-10-03'],\
     ['makaronai penne', 1.49, '350kcal', '2024-01-30'], ['bociu duona', 1.49, '350kcal', '2024-01-30'], \
-    ['kruasanas', 1.49, '350kcal', '2024-01-30'], ['meduoliai', 1.49, '350kcal', '2024-01-30'],\
-    ['krekeriai' , 1.49, '350kcal', '2024-01-30'], ['virtinukai "Dziaugsmas"', 1.49, '350kcal', '2024-01-30'],\
-    ['saldyti varskeciai', 1.49, '350kcal', '2024-01-30']
+    ['kruasanas', 1.22, 198, '2025-05-22'], ['meduoliai', 11.87, 987, '1999-01-14'],\
+    ['krekeriai' , 0.87, 12, '2021-06-10'], ['virtinukai "Dziaugsmas"', 6.87, 283, '2022-08-30'],\
+    ['saldyti varskeciai', 158.60, 201, '2020-11-06']
     ]
 
 darzoves = [
@@ -69,8 +69,8 @@ darzoves = [
 produktu_info = {
     "zuvies_produktai": { str(zuvies_produktai[zuvies_produktas][0]):{"kaina": zuvies_produktai[zuvies_produktas][1], "maistine_verte": zuvies_produktai[zuvies_produktas][2], "galiojimo_data": zuvies_produktai[zuvies_produktas][3]} for zuvies_produktas in range(len(zuvies_produktai))},
     "pieno_produktai": { str(pieno_produktai[pieno_produktas][0]):{"kaina": pieno_produktai[pieno_produktas][1], "maistine_verte": pieno_produktai[pieno_produktas][2], "galiojimo_data": pieno_produktai[pieno_produktas][3]} for pieno_produktas in range(len(pieno_produktai))},
-    "miltiniai_produktai": { str(miltiniai_produktai[miltiniai_produktai][0]):{"kaina": miltiniai_produktai[miltiniai_produktai][1], "maistine_verte": miltiniai_produktai[miltiniai_produktai][2], "galiojimo_data": miltiniai_produktai[miltiniai_produktai][3]} for miltiniai_produktai in range(len(miltiniai_produktai))},
-    "darzoves": { str(darzoves[darzoves][0]):{"kaina": darzoves[darzoves][1], "maistine_verte": darzoves[darzoves][2], "galiojimo_data": darzoves[darzoves][3]} for darzoves in range(len(darzoves))}
+    "miltiniai_produktai": { str(miltiniai_produktai[miltinis_produktas][0]):{"kaina": miltiniai_produktai[miltinis_produktas][1], "maistine_verte": miltiniai_produktai[miltinis_produktas][2], "galiojimo_data": miltiniai_produktai[miltinis_produktas][3]} for miltinis_produktas in range(len(miltiniai_produktai))},
+    "darzoves": { str(darzoves[darzove][0]):{"kaina": darzoves[darzove][1], "maistine_verte": darzoves[darzove][2], "galiojimo_data": darzoves[darzove][3]} for darzove in range(len(darzoves))}
 }
 
 
@@ -85,9 +85,7 @@ while True:
     Pasirinkite programos funkcija:    
     1 - Pasirinkti produkta i pirkiniu krepseli
     2 - apziureti pirkiniu krepseli
-    2 - Produkto kaina
-    3 - Produkto kcal
-    4 - Produkto galiojimo laikas
+    
     0 - Iseiti is programos
 
     """    
@@ -126,12 +124,12 @@ while True:
             print('Pasirinkite produkta is saraso:')
             for i in range(len(pieno_produktai)):
                 print(f"nr: {i+1} - {pieno_produktai[i][0]}")
-                produkto_index = int(input('Iveskite produkto numeri:'))
-                if produkto_index - 1 in range(len(pieno_produktai)):
+            produkto_index = int(input('Iveskite produkto numeri:'))
+            if produkto_index - 1 in range(len(pieno_produktai)):
 
                 # pasirinktas_produktas = pieno_produktai[produkto_index-1]
-                    pirkiniai.append(pieno_produktai[produkto_index - 1][0])
-                    print(f"Produktas {pieno_produktai[produkto_index - 1][0]} itrauktas i pirkiniu krepseli.")
+                pirkiniai.append(pieno_produktai[produkto_index - 1][0])
+                print(f"Produktas {pieno_produktai[produkto_index - 1][0]} itrauktas i pirkiniu krepseli.")
 
         
         
@@ -139,18 +137,18 @@ while True:
             print('Pasirinkite produkta is saraso:')
             for i in range(len(miltiniai_produktai)):
                 print(f"nr: {i+1} - {miltiniai_produktai[i][0]}")
-                produkto_index = int(input('Iveskite produkto numeri:'))
-                if produkto_index - 1 in range(len(miltiniai_produktai)):
+            produkto_index = int(input('Iveskite produkto numeri:'))
+            if produkto_index - 1 in range(len(miltiniai_produktai)):
 
                 # pasirinktas_produktas = pieno_produktai[produkto_index-1]
-                    pirkiniai.append(miltiniai_produktai[produkto_index - 1][0])
-                    print(f"Produktas {miltiniai_produktai[produkto_index - 1][0]} itrauktas i pirkiniu krepseli.")
+                pirkiniai.append(miltiniai_produktai[produkto_index - 1][0])
+                print(f"Produktas {miltiniai_produktai[produkto_index - 1][0]} itrauktas i pirkiniu krepseli.")
         
         elif pasirinktas_produktas == 4:
             print('Pasirinkite produkta is saraso:')
             for i in range(len(darzoves)):
                 print(f"nr: {i+1} - {darzoves[i][0]}")
-                produkto_index = int(input('Iveskite produkto numeri:'))
+            produkto_index = int(input('Iveskite produkto numeri:'))
 
             if produkto_index - 1 in range(len(darzoves)):
 
@@ -187,7 +185,7 @@ while True:
  Galiojimo data: {pirkinio_tipas.get(pirkinys).get('galiojimo_data')}")
                         visa_kaina += pirkinio_tipas.get(pirkinys).get('kaina')
                         visa_maist_verte += pirkinio_tipas.get(pirkinys).get('maistine_verte')
-                        print(f"Visa kaina: {visa_kaina}, Visa maistine verte: {visa_maist_verte}")# logika gauti pirkinio value
+            print(f"Visa kaina: {visa_kaina}, Visa maistine verte: {visa_maist_verte}")# logika gauti pirkinio value
         
         elif choice <= 0 or choice > 2:
             continue
