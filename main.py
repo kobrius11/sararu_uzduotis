@@ -183,7 +183,7 @@ while True:
  Galiojimo data: {pirkinio_tipas.get(pirkinys).get('galiojimo_data')}")
                         visa_kaina += pirkinio_tipas.get(pirkinys).get('kaina')
                         visa_maist_verte += pirkinio_tipas.get(pirkinys).get('maistine_verte')
-            print(f"Visa kaina: {visa_kaina}, Visa maistine verte: {visa_maist_verte}")# logika gauti pirkinio value
+            print(f"\nVisa kaina: {visa_kaina} eu, Visa maistine verte: {visa_maist_verte}Kcal")# logika gauti pirkinio value
         
         elif choice <= 0 or choice > 2:
             continue
