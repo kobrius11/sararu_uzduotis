@@ -102,6 +102,7 @@ while True:
         print('1 Zuvies:')
         print('2 Pieno:')
         print('3 Miltiniai:')
+        print('4 Darzoves:')
         pasirinktas_produktas = int(input('Pasirinkite produkto kategorija 1, 2 arba 3:'))
         
         if pasirinktas_produktas == 1:
@@ -161,7 +162,7 @@ while True:
         print("""
         Ka norite daryti su pirkiniu krepseliu ?
         0 - iseiti i meniu
-        1 - isimti produkta if krepselio
+        1 - isimti produkta is krepselio
         2 - parodyti info apie produkta
         
         """)
