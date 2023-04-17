@@ -144,9 +144,13 @@ while True:
         
         """)
         choice = int(input('jusu pasirinkimas: '))
+
+        #Renaldas - create a del function
         if choice == 1:
-            # pirkiniai.pop(produkto_pavadinimas)
-            pass
+            for i in range(len(pirkiniai)):
+                print(f"nr: {i+1} - {pirkiniai[i]}")
+            pirkiniu_krepselis = int(input('Iveskite produkto numeri produkto kuri norite istrinti:'))
+            pirkiniai.pop(pirkiniu_krepselis - 1)
         
         elif choice == 2:
             for pirkinys in pirkiniai:
