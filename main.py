@@ -167,6 +167,8 @@ while True:
         
         """)
         choice = int(input('jusu pasirinkimas: '))
+
+        #Renaldas - create a del function
         if choice == 1:
             for i in range(len(pirkiniai)):
                 print(f"nr: {i+1} - {pirkiniai[i]}")
